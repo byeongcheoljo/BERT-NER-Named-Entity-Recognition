@@ -26,5 +26,11 @@ class SentenceGetter():
 
 
 getter = SentenceGetter(data)
-print(getter)
-print(getter.sentences)
+sentences = [[word[0] for word in sentence]for sentence in getter.sentences]
+print(sentences[0])
+labels = [[word[2] for word in sentence]for sentence in getter.sentences]
+print(labels[0])
+
+tag_values = list(set(data["Tag"].values))
+tag_values.append("PAD")
+tag2idx = {t: i for i, t in enumerate(tag_values)}
