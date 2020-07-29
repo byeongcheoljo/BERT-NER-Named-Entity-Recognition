@@ -1,4 +1,4 @@
-### BERT-NER (Named-Entity-Recognition) 구현 하고 있습니다.
+### BERT-NER (Named-Entity-Recognition) 구현
 
 
 ### DataSet download here:
